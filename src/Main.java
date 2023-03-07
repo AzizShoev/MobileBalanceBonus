@@ -8,6 +8,9 @@ public class Main {
         if (upAmountBalance > 1000) {
             bonus = (upAmountBalance / 100 * 1);
         }
+        else{
+            System.out.println("Внесено недостаточно средств для начисления бонуса.");
+        }
 
         int totalBalance = clientBalance + upAmountBalance + bonus;
 
